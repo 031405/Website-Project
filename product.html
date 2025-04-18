@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Details - Rent a Boyfriend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .profile-img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .profile-card {
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .profile-description {
+      padding: 10px 20px;
+    }
+    .rented-label {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 0, 0, 0.7);
+      color: white;
+      padding: 5px;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Boyfriend Profiles</h1>
+  <p>Pick your match!</p> 
+</div>
+
+<div class="container">
+
+  
+  <div id="amora" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="423237154_3619573915026542_9159071897043796002_n.jpg" class="profile-img" alt="Amora">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>AMORA, JOHN PAUL</h3>
+      <p>Skilled coder, smart and responsible. Great for tech help and companionship!</p>
+      <p>Age: 24</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-1" onclick="rentProduct(1)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-1">Already Rented</div>
+  </div>
+
+  
+  <div id="francisco" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="448886908_1524183785140258_164794224818662573_n.jpg" class="profile-img" alt="Francisco">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>FRANCISCO, LANCE</h3>
+      <p>Charming and handsome. The type you can flaunt anywhere.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-2" onclick="rentProduct(2)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-2">Already Rented</div>
+  </div>
+
+  
+  <div id="furio" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="468990928_3056667247817374_2275767988938238698_n.jpg" class="profile-img" alt="Furio">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>FURIO, ADLERSON AOSTIN</h3>
+      <p>Tall, athletic, and ready for adventure.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-3" onclick="rentProduct(3)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-3">Already Rented</div>
+  </div>
+
+  
+  <div id="abril" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="475082945_1651728035470228_7126320879409542455_n.jpg" class="profile-img" alt="Abril">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>ABRIL, JOHN DONDELL</h3>
+      <p>Sizzling looks with a heart of gold. For those who want it hot!</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-4" onclick="rentProduct(4)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-4">Already Rented</div>
+  </div>
+
+  
+  <div id="cabarillas" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="423538608_792691416219170_5821479571845689643_n.jpg" class="profile-img" alt="Cabarillas">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>CABARILLAS, MELVIN</h3>
+      <p>Wealthy and wise. Knows how to treat you right.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-5" onclick="rentProduct(5)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-5">Already Rented</div>
+  </div>
+
+  
+  <div id="ballebar" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="481025026_1701407104060944_7610281497356043181_n.jpg" class="profile-img" alt="Ballebar">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>BALLEBAR, JEMUEL JAN</h3>
+      <p>Classy and stylish with a generous heart.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-6" onclick="rentProduct(6)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-6">Already Rented</div>
+  </div>
+
+  
+  <div id="imson" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="482323317_2050436392127012_51488125727697726_n.jpg" class="profile-img" alt="Imson">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>IMSON, JUSTIN RHEGGIE</h3>
+      <p>Confident and charismatic. A spicy pick for thrilling dates.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-7" onclick="rentProduct(7)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-7">Already Rented</div>
+  </div>
+
+  
+  <div id="durias" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="480689488_1315722286214491_311284179590893149_n.jpg" class="profile-img" alt="Durias">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>DURIAS, JOHN ERIC</h3>
+      <p>Tall and dependable. A perfect match for a long walk and deep talks.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-8" onclick="rentProduct(8)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-8">Already Rented</div>
+  </div>
+
+  
+  <div id="coronacion" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="480640273_1314210373036117_5223091212146444715_n.jpg" class="profile-img" alt="Coronacion">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>CORONACION, ARCHIE</h3>
+      <p>Campus crush with charm and wit. The guy everyone has a crush on.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-9" onclick="rentProduct(9)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-9">Already Rented</div>
+  </div>
+
+  <div id="mendoza" class="row profile-card">
+    <div class="col-sm-4">
+      <img src="70321928_1621893261275734_3627461333034729472_n.jpg" class="profile-img" alt="Mendoza">
+    </div>
+    <div class="col-sm-8 profile-description">
+      <h3>CORONACION, ARCHIE</h3>
+      <p>Campus crush with charm and wit. The guy everyone has a crush on.</p>
+      <p>Age: 20</p>
+      <p>Live: San Pablo</p>
+      <p><strong>Price:</strong> $100/day</p>
+      <button class="btn btn-success" id="rent-btn-10" onclick="rentProduct(10)">RENT</button>
+      <a href="index.html" class="btn btn-primary">BACK</a>
+    </div>
+    <div class="rented-label" id="rented-label-10">Already Rented</div>
+  </div>
+
+  
+  <div class="modal fade" id="rentModal" tabindex="-1" role="dialog" aria-labelledby="rentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="rentModalLabel">Confirm Rental</h4>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to rent this person?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal" onclick="confirmRental()">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  let rentedProducts = {}; 
+
+  function rentProduct(productId) {
+    const rentedLabel = document.getElementById(`rented-label-${productId}`);
+    const rentButton = document.getElementById(`rent-btn-${productId}`);
+
+    if (rentedProducts[productId]) {
+      
+      alert("This person is already rented and is no longer available.");
+    } else {
+      
+      $('#rentModal').modal('show');
+      
+      window.currentProductId = productId;
+    }
+  }
+
+  function confirmRental() {
+    const productId = window.currentProductId;
+    const rentedLabel = document.getElementById(`rented-label-${productId}`);
+    const rentButton = document.getElementById(`rent-btn-${productId}`);
+
+    
+    rentedProducts[productId] = true;
+    rentedLabel.style.display = 'block'; 
+    rentButton.innerText = "Not Available";
+    rentButton.classList.add('disabled'); 
+  }
+</script>
+
+</body>
+</html>
